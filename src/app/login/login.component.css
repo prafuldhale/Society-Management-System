@@ -1,0 +1,132 @@
+/* 
+    Colortheme 
+    primary Color to right side:  #065ad8 
+*/
+*{
+  padding: 0%;
+  margin: 0px;
+}
+body {
+  background-color: rgb(213, 213, 213);
+}
+.loginPallete {
+  background-color: #fff;
+  box-shadow: #fff;
+  border-radius: 11px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.left {
+  flex: 1;
+
+}
+.right {
+  background: -webkit-linear-gradient(right, #1368e8, #6499E9);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex: 1;
+}
+.logo {
+  margin: 33px -10px 1px 0px;
+  width: fit-content;
+  height: 46px;
+}
+.form-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  /* outline: 2px solid #5c5c5c; */
+  box-shadow: #5c5c5c;
+  width: 110px;
+  padding: 0px;
+  margin: 30px 10px;
+}
+
+div.new{
+  flex-grow:1;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+.newD{
+  display:flex;
+  flex-direction:row;
+   align-items: center;
+}
+.text{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  font-weight: bold;
+}
+/* tr{
+  margin: 1px;
+}
+.titles{
+  margin: 10px;
+} */
+.primary-title{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 1px;
+  margin-bottom: 0px;
+}
+.secondary-title{
+  font-weight: 100;
+  font-size: 14px;
+  padding: 1px;
+}
+
+.orMessage{
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.forgotPass , mat-checkbox{
+  white-space: nowrap;
+  padding: auto;
+}
+span{
+  margin: 0px;
+  padding: 10px;
+  color: #000;
+}
+input{
+  width: 100%;
+}
+mat-form-field{
+  width: 100%;
+}
+.submitBtn{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.material-symbols-outlined{
+  padding: 10px;
+}
+
+.rightBGImage{
+  background-image: url('/assets/sliderImage/3.3.jpg');
+  max-width: 100%;
+  height: 510px;
+  position: relative;
+  top: 0.3%;
+  left: 5%;
+  bottom: 5%;
+  right: 5%;
+  object-fit: scale-down;
+  background-repeat: no-repeat;
+}
