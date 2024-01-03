@@ -2,13 +2,15 @@
     Colortheme 
     primary Color to right side:  #065ad8 
 */
-*{
+* {
   padding: 0%;
   margin: 0px;
 }
+
 body {
   background-color: rgb(213, 213, 213);
 }
+
 .loginPallete {
   background-color: #fff;
   box-shadow: #fff;
@@ -22,21 +24,24 @@ body {
   border-radius: 10px;
   transform: translate(-50%, -50%);
 }
+
 .left {
   flex: 1;
-
 }
+
 .right {
   background: -webkit-linear-gradient(right, #1368e8, #6499E9);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   flex: 1;
 }
+
 .logo {
   margin: 33px -10px 1px 0px;
   width: fit-content;
   height: 46px;
 }
+
 .form-table {
   display: flex;
   justify-content: center;
@@ -51,82 +56,108 @@ body {
   margin: 30px 10px;
 }
 
-div.new{
-  flex-grow:1;
+div.new {
+  flex-grow: 1;
   height: 1px;
   background-color: #9f9f9f;
 }
-.newD{
-  display:flex;
-  flex-direction:row;
-   align-items: center;
+
+.newD {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.text{
-  display:flex;
-  flex-direction:row;
+
+.text {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   font-weight: bold;
 }
+
 /* tr{
   margin: 1px;
 }
 .titles{
   margin: 10px;
 } */
-.primary-title{
+.primary-title {
   color: rgb(0, 0, 0);
   font-weight: bold;
   padding: 1px;
   margin-bottom: 0px;
 }
-.secondary-title{
+
+.secondary-title {
   font-weight: 100;
   font-size: 14px;
   padding: 1px;
 }
 
-.orMessage{
+.orMessage {
   font-size: 10px;
   text-align: center;
   padding: 10px;
   vertical-align: middle;
 }
 
-.forgotPass , mat-checkbox{
+.forgotPass,
+mat-checkbox {
   white-space: nowrap;
-  padding: auto;
+  padding: 1px;
 }
-span{
+
+span {
   margin: 0px;
   padding: 10px;
   color: #000;
 }
-input{
+
+input {
   width: 100%;
 }
-mat-form-field{
+
+mat-form-field {
   width: 100%;
 }
-.submitBtn{
+
+.submitBtn {
   align-items: center;
   text-align: center;
   justify-content: center;
   width: fit-content;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   padding: 10px;
 }
 
-.rightBGImage{
+.rightBGImage {
   background-image: url('/assets/sliderImage/3.3.jpg');
-  max-width: 100%;
-  height: 510px;
-  position: relative;
-  top: 0.3%;
-  left: 5%;
-  bottom: 5%;
-  right: 5%;
-  object-fit: scale-down;
+  display: flex;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 529px) {
+  .loginPallete {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .right {
+    display: none;
+  }
+  .left{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
 }
