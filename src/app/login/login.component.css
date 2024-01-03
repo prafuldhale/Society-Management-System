@@ -156,7 +156,7 @@ mat-form-field {
   }
   .left{
     align-items: center;
-    height: 100%;
+    height: 10%;
     width: 100%;
     justify-content: center;
   }
