@@ -20,7 +20,6 @@ body {
   top: 50%;
   left: 50%;
   width: 80%;
-  /* height: 80%; */
   max-height: fit-content;
   border-radius: 10px;
   padding: 10px;
@@ -39,7 +38,8 @@ body {
 }
 
 .logo {
-  margin: 33px -10px 1px 0px;
+  /* margin: 33px -10px 1px 0px; */
+  margin: 33px 0px 1px 0px;
   width: fit-content;
   height: 46px;
 }
@@ -140,9 +140,9 @@ mat-form-field {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-
   justify-content: center;
   align-items: center;
+  margin-left: 1em;
 }
 
 

@@ -34,7 +34,10 @@ import {MatTreeModule} from '@angular/material/tree';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 @NgModule({
     declarations: [
         AppComponent,
@@ -42,6 +45,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         DashboardComponent
     ],
     imports: [
+        SidebarModule,
+        AvatarModule,
+        AvatarGroupModule,
+        ButtonModule,
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,

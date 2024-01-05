@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Sidebar, SidebarModule } from 'primeng/sidebar';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   title = "Dashboard";
   DashboardName = "Explorer";
-vm: any;
+  @ViewChild('sidebarRef') sidebarRef!: Sidebar;
+
+    closeCallback(e: Event): void {
+        this.sidebarRef.close(e);
+    }
+
+    sidebarVisible: boolean = false;
+
+
 }
