@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    margin: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  
+  ::ng-deep mat-card{
+    display: inline-flex;
+  }

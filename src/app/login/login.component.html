@@ -82,7 +82,7 @@
           </tr>
           <tr>
             <td colspan="2" class="submitBtn">
-              <button mat-raised-button color="primary">Log in</button>
+              <button mat-raised-button color="primary" (click)="navigateToDashboard()">Log in</button>
             </td>
           </tr>
           <tr>
@@ -97,6 +97,7 @@
       <div class="rightBGImage"></div>
     </div>
   </div>
+  <router-outlet></router-outlet>
 </body>
 
 </html>

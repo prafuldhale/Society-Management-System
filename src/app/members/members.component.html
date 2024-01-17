@@ -1,0 +1,136 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ presidentName }}</mat-card-title>
+      <mat-card-subtitle>{{ position }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="data:image/jpeg;base64,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"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a {{ memberName }}"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ memberName }}</mat-card-title>
+      <mat-card-subtitle>{{ position1 }}</mat-card-subtitle>
+      <img
+        mat-card-md-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Image of a Shiba Inu"
+      />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ longText }}
+  </mat-card-content>
+</mat-card>
+
+<div class="member-cards"></div>

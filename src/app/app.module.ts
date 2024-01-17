@@ -38,13 +38,33 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { HomepageComponent } from './homepage/homepage.component';
+import { RouterModule } from '@angular/router';
+import { MenubarModule } from 'primeng/menubar';
+import { MenuModule } from 'primeng/menu';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { UserReportsComponent } from './user-reports/user-reports.component';
+import { MembersComponent } from './members/members.component';
+import { SocietyChatGroupComponent } from './society-chat-group/society-chat-group.component';
+import { FestiveCalendarComponent } from './festive-calendar/festive-calendar.component';
+import { UserSettingsComponent } from './user-settings/user-settings.component';
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
-        DashboardComponent
+        DashboardComponent,
+        HomepageComponent,
+        AdminDashboardComponent,
+        UserReportsComponent,
+        MembersComponent,
+        SocietyChatGroupComponent,
+        FestiveCalendarComponent,
+        UserSettingsComponent
     ],
     imports: [
+        MenuModule,
+        MenubarModule,
+        RouterModule,
         SidebarModule,
         AvatarModule,
         AvatarGroupModule,
