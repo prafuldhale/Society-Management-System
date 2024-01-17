@@ -34,7 +34,7 @@ main {
 
 mat-drawer {
   flex: 1;
-  width: 15%;
+  width: 18%;
   height: 100%;
 }
 
@@ -53,12 +53,13 @@ li {
 
 i {
   font-weight: 800;
+  margin: 2px;
 }
 
 a {
   padding: 10px;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 20px;
   text-decoration: none;
 }
 @media (max-width: 1080px) {
