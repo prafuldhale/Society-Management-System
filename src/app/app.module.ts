@@ -21,7 +21,7 @@ import { MatSortModule } from "@angular/material/sort";
 import {  MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import {HttpClientModule} from "@angular/common/http";
-import { ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatCheckboxModule} from '@angular/material/checkbox';
 import { MatRadioModule} from '@angular/material/radio';
@@ -62,6 +62,7 @@ import { UserSettingsComponent } from './user-settings/user-settings.component';
         UserSettingsComponent
     ],
     imports: [
+        FormsModule,
         MenuModule,
         MenubarModule,
         RouterModule,
