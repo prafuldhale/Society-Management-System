@@ -1,0 +1,36 @@
+{
+  "accouncement": [
+    {
+      "id": 1234,
+      "title": "Andrew Owen",
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae ratione corrupti, ut fugit facere rerum pariatur illum mollitia provident illo sapiente cupiditate deleniti molestiae soluta laborum dignissimos excepturi alias esse iure recusandae minima ullam adipisci! Similique laborum debitis porro id non, quis perspiciatis. Rerum nostrum laborum id nobis accusantium quia assumenda facilis iusto laudantium consectetur laboriosam distinctio suscipit repellat quam deleniti dolor architecto, fugiat magni cum, saepe, ipsum asperiores numquam maiores! Optio ullam tempora sit cupiditate, sunt perspiciatis consectetur minus amet officia libero dicta? Magnam necessitatibus in doloremque? Autem minus illum nostrum cumque est, error enim repudiandae recusandae natus?",
+      "path": "/folder/"
+    },
+    {
+        "id": 1235,
+        "title": "Andrew Owen",
+        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae ratione corrupti, ut fugit facere rerum pariatur illum mollitia provident illo sapiente cupiditate deleniti molestiae soluta laborum dignissimos excepturi alias esse iure recusandae minima ullam adipisci! Similique laborum debitis porro id non, quis perspiciatis. Rerum nostrum laborum id nobis accusantium quia assumenda facilis iusto laudantium consectetur laboriosam distinctio suscipit repellat quam deleniti dolor architecto, fugiat magni cum, saepe, ipsum asperiores numquam maiores! Optio ullam tempora sit cupiditate, sunt perspiciatis consectetur minus amet officia libero dicta? Magnam necessitatibus in doloremque? Autem minus illum nostrum cumque est, error enim repudiandae recusandae natus?",
+        "path": "/folder/"
+      },
+      {
+        "id": 1236,
+        "title": "Andrew Owen",
+        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae ratione corrupti, ut fugit facere rerum pariatur illum mollitia provident illo sapiente cupiditate deleniti molestiae soluta laborum dignissimos excepturi alias esse iure recusandae minima ullam adipisci! Similique laborum debitis porro id non, quis perspiciatis. Rerum nostrum laborum id nobis accusantium quia assumenda facilis iusto laudantium consectetur laboriosam distinctio suscipit repellat quam deleniti dolor architecto, fugiat magni cum, saepe, ipsum asperiores numquam maiores! Optio ullam tempora sit cupiditate, sunt perspiciatis consectetur minus amet officia libero dicta? Magnam necessitatibus in doloremque? Autem minus illum nostrum cumque est, error enim repudiandae recusandae natus?",
+        "path": "/folder/"
+      },
+      {
+        "id": 1237,
+        "title": "Andrew Owen",
+        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae ratione corrupti, ut fugit facere rerum pariatur illum mollitia provident illo sapiente cupiditate deleniti molestiae soluta laborum dignissimos excepturi alias esse iure recusandae minima ullam adipisci! Similique laborum debitis porro id non, quis perspiciatis. Rerum nostrum laborum id nobis accusantium quia assumenda facilis iusto laudantium consectetur laboriosam distinctio suscipit repellat quam deleniti dolor architecto, fugiat magni cum, saepe, ipsum asperiores numquam maiores! Optio ullam tempora sit cupiditate, sunt perspiciatis consectetur minus amet officia libero dicta? Magnam necessitatibus in doloremque? Autem minus illum nostrum cumque est, error enim repudiandae recusandae natus?",
+        "path": "/folder/"
+      }
+  ],
+  "members": [
+    {
+        "id": 1238,
+        "name": "Andrew Owen",
+        "About-info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quia.",
+        "image-path": "/folder/"
+    }
+  ]
+}

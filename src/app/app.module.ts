@@ -20,8 +20,8 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatSortModule } from "@angular/material/sort";
 import {  MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import {HttpClientModule} from "@angular/common/http";
-import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { FormsModule, NgForm, ReactiveFormsModule} from "@angular/forms";
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatCheckboxModule} from '@angular/material/checkbox';
 import { MatRadioModule} from '@angular/material/radio';
@@ -48,6 +48,8 @@ import { MembersComponent } from './members/members.component';
 import { SocietyChatGroupComponent } from './society-chat-group/society-chat-group.component';
 import { FestiveCalendarComponent } from './festive-calendar/festive-calendar.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
+import { FileUploadModule } from 'primeng/fileupload';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -62,6 +64,8 @@ import { UserSettingsComponent } from './user-settings/user-settings.component';
         UserSettingsComponent
     ],
     imports: [
+        FileUploadModule,
+        HttpClientModule,
         FormsModule,
         MenuModule,
         MenubarModule,

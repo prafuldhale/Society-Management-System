@@ -1,6 +1,6 @@
 <mat-card class="container">
   <mat-card-header>
-    <span>SMS Society</span>
+    <span>SMS Society Chat Room</span>
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-drawer-container>
@@ -19,13 +19,20 @@
     <mat-drawer-content>
       <div class="chatHistory">
         <mat-card class="message">
-            <mat-card-content ><span [(ngModel)]="message" class="newMessages"></span></mat-card-content>
-          </mat-card>
+          <mat-card-content
+            ><span [(ngModel)]="message" class="newMessages"
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+              officia.</span
+            ></mat-card-content
+          >
+        </mat-card>
       </div>
       <div class="newChat">
         <span class="material-symbols-outlined"> attach_file </span>
         <input type="text" pInputText [(ngModel)]="message" />
-        <button mat-raised-button (click)="sendMessage()"><span class="material-symbols-outlined">send</span></button> 
+        <button mat-raised-button (click)="sendMessage()" color="primary">
+          <span class="material-symbols-outlined">send</span>
+        </button>
       </div>
     </mat-drawer-content>
   </mat-drawer-container>

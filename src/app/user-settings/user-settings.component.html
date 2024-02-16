@@ -1,1 +1,66 @@
-<p>user-settings works!</p>
+<div class="main-container">
+  <nav class="profile-nav">
+    <ul>
+      <li>Profilename</li>
+      <li>Profile-Image</li>
+    </ul>
+  </nav>
+  <div class="right-container">
+    <div class="left">
+      <a disabled>
+        <span class="material-symbols-outlined"> edit </span>
+        <span class="name">Edit Profile</span>
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      </a>
+    </div>
+    <div class="right">
+      <h2>Edit Profile</h2>
+      <div class="profile-img">
+        <img
+          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+          alt=""
+        />
+        <div class="files">
+          <input
+            type="file"
+            name=""
+            class="file-upload"
+            (change)="onFileSelected($event)"
+          />
+          <button mat-raised-button>Change Profile</button>
+        </div>
+      </div>
+      <div class="form">
+        <div class="name">
+          <div class="fName">
+            <label for="fName">First Name</label>
+            <input type="text" />
+          </div>
+          <div class="lName">
+            <label for="lName">Last Name</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="mobile">
+          <label for="mobile">Contact No</label>
+          <input
+            type="number"
+            name="mobile"
+            id="mobile"
+            pattern="[1-9][0-9]"
+            [maxLength]="10"
+          />
+        </div>
+        <div class="about">
+          <label for="about">About Me</label>
+          <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <button mat-raised-button color="primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
