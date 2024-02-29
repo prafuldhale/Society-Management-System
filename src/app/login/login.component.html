@@ -52,8 +52,8 @@
           <tr>
             <td colspan="2">
               <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input type="email" matInput placeholder="ex. example@g.com" />
+                <mat-label>Email*</mat-label>
+                <input type="email"  name="username" matInput placeholder="ex. example@g.com" [(ngModel)]="data.username" email="true"/>
                 <mat-icon matSuffix class="material-symbols-outlined">
                   mail
                 </mat-icon>
@@ -63,14 +63,15 @@
           <tr>
             <td colspan="2">
               <mat-form-field appearance="outline">
-                <mat-label>Password</mat-label>
-                <input type="password" matInput placeholder="ex. **********" />
+                <mat-label>Password*</mat-label>
+                <input type="password" name="password" matInput placeholder="ex. **********" [(ngModel)]="data.password"/>
                 <mat-icon matSuffix class="material-symbols-outlined">
                   lock
                 </mat-icon>
               </mat-form-field>
             </td>
           </tr>
+          <span class="error" class="error-message">{{error_message}}</span>
           <tr class="forgotPass">
             <td>
               <mat-checkbox color="primary">
@@ -82,7 +83,7 @@
           </tr>
           <tr>
             <td colspan="2" class="submitBtn">
-              <button mat-raised-button color="primary" (click)="navigateToDashboard()">Log in</button>
+              <button mat-raised-button type="submit" color="primary" (click)="navigateToDashboard()">Log in</button>
             </td>
           </tr>
           <tr>

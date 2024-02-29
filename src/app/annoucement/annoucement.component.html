@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="todays-event"></div>
+  <div class="form">
+    <h2>Add new Events</h2>
+    <form action="">
+      <mat-form-field class="input-field" appearance="outline">
+        <mat-label>Event Title</mat-label>
+        <input
+          type="text"
+          name="eventTitle"
+          id="eventTitle"
+          matInput
+          placeholder="Enter Event Title Here..."
+          [(ngModel)]="announcement.title"
+        />
+      </mat-form-field>
+      <mat-form-field class="input-field" appearance="outline">
+        <mat-label>Event Manager Name</mat-label>
+        <input
+          type="text"
+          name="eventManagerName"
+          id="eventManagerName"
+          matInput
+          placeholder="Enter Team Lead Name..."
+          [(ngModel)]="announcement.eventManagerName"
+        />
+      </mat-form-field>
+      <mat-form-field class="input-field" appearance="outline">
+        <mat-label>Event Date</mat-label>
+        <input
+          name="eventDate"
+          id="eventdate"
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Select Event Date"
+          [min] = "todaysDate"
+          [(ngModel)]="announcement.eventDate"
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="input-field" appearance="outline">
+        <mat-label>Event Time</mat-label>
+        <input
+          name="eventTime"
+          id="eventTIme"
+          matInput
+          [ngxTimepicker]="default"
+          placeholder="Select Event Time"
+          [(ngModel)]="announcement.time"
+          readonly
+        />
+        <ngx-material-timepicker #default></ngx-material-timepicker>
+      </mat-form-field>
+      <mat-form-field class="input-field textarea-a" appearance="outline">
+        <mat-label>Event details</mat-label>
+        <textarea
+          name="description"
+          id="description"
+          matInput
+          placeholder="Event Description"
+          rows="5"
+          [(ngModel)]="announcement.description"
+        ></textarea>
+      </mat-form-field>
+
+      <button type="submit" mat-flat-button color="primary" (click)="insertAnnoucement()">Submit</button>
+      <button type="reset" mat-flat-button>Reset</button>
+    </form>
+  </div>
+</div>

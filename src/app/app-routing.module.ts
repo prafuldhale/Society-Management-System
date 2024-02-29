@@ -9,6 +9,7 @@ import { MembersComponent } from './members/members.component';
 import { SocietyChatGroupComponent } from './society-chat-group/society-chat-group.component';
 import { FestiveCalendarComponent } from './festive-calendar/festive-calendar.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
+import { AnnoucementComponent } from './annoucement/annoucement.component';
 const routes: Routes = [
   {
     path: '',
@@ -30,6 +31,9 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminDashboardComponent,
+    children: [
+      {path:"eventmanager", component: AnnoucementComponent}
+    ]
   },
 ];
 

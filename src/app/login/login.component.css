@@ -163,3 +163,6 @@ mat-form-field {
     justify-content: center;
   }
 }
+.error-message{
+  color: #f70d0d;
+}

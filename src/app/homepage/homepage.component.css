@@ -14,14 +14,13 @@
 }
 .container > .left,
 .container > .right {
-  width: 35%;
   padding: 10px;
   justify-content: center;
 }
 .container > .left {
   color: #000;
   margin: 28px;
-  /* margin-top: 10px; */
+  width: 50%;
   padding: 20px;
   display: inline;
   height: fit-content;
@@ -65,9 +64,10 @@ mat-card{
 /* Rounded CardDesign */
 
 .roundC{
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-image: linear-gradient(#ffffff,80%, rgb(123, 123, 123));  
+  /* background-image: linear-gradient(#ff9100,10%,#fff, rgb(0, 133, 7));   */
   /* box-shadow: 100px 100px lightblue;; */
   border-radius: 50%;
 

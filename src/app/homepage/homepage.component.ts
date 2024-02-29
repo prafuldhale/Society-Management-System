@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AnnoucementserviceService } from '../services/annoucementservice.service';
 import {MatBadgeModule} from '@angular/material/badge';
-
+import { CookieService } from 'ngx-cookie-service';
+import { Route, Router } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-homepage',
@@ -9,11 +11,11 @@ import {MatBadgeModule} from '@angular/material/badge';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  
-  
+  responsiveOptions: any[] | undefined;
   truncateDescription(description: String) {
-     let words = description.split(' ');
-     if(words.length > 13){
+     const words = description?.split(',') || [];
+
+     if(words.length >= 13){
       return words.slice(0, 13).join(' ') + '...';
      }
      else
@@ -21,14 +23,18 @@ export class HomepageComponent implements OnInit {
   }
   
   annoucementList: any;
-  constructor(private annoucementService: AnnoucementserviceService) {}
+  constructor(private router: Router,private annoucementService: AnnoucementserviceService, private cookieService:CookieService) {}
 
   ngOnInit(): void {
+
+    if(!this.cookieService.check("isLogin")){
+        this.router.navigate(["/"])
+        return;
+    }
+
     this.annoucementService.getAnnoucements().subscribe((data) => {
       this.annoucementList = data;
       console.log(this.annoucementList);
     });
-    // this.annoucementList = this.annoucementService.getAnnoucements();
-    // console.log(this.annoucementList);
   }
 }

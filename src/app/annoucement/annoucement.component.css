@@ -1,0 +1,32 @@
+::ng-deep mat-drawer-content {
+  width: 100%;
+  height: fit-content;
+  margin: 10px;
+}
+
+body{
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.todays-event{
+    height: 30vh;
+    width: 100%;
+    border: 2px solid black;
+}
+mat-form-field{
+    margin: 1%;
+    width: 30%;
+    border-radius: 10px;   
+}
+.form{
+    margin: 30px;
+}
+.textarea-a{
+    width: 90%;
+}
+button{
+    margin: 10px;
+}

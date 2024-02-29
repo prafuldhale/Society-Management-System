@@ -3,10 +3,14 @@
 Maintence
 NOC from Society
 Proof of address -->
-<mat-card>
-    <mat-card-title>Utility Bill</mat-card-title>
-    <mat-card-content>
-        Description of bills Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, officia.
-    </mat-card-content>
-    <mat-card-footer><button mat-raised-button color="primary">Download</button></mat-card-footer>
+<mat-card *ngFor="let bill of report">
+  <mat-card-title>{{ bill.title }}</mat-card-title>
+  <mat-card-content>
+    {{ bill.description }}
+  </mat-card-content>
+  <mat-card-footer>
+    <button mat-raised-button color="primary" (click)="downloadBill(bill.id)">
+      Download
+    </button>
+  </mat-card-footer>
 </mat-card>

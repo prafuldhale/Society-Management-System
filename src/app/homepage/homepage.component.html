@@ -1,17 +1,16 @@
 <div class="container">
   <div class="left">
-    <div class="title">Annoucement</div>
+    <div class="title">Annoucement and News</div>
 
     <mat-card *ngFor="let annoucement of annoucementList">
       <mat-card-title >{{annoucement.title}}</mat-card-title>
-      <mat-card-content
-        >{{truncateDescription(annoucement.Description)}}</mat-card-content
-      >
+      <mat-card-content>{{truncateDescription(annoucement.description)}}</mat-card-content>
       <button mat-raised-button color="primary" matBadge="8">Read More</button>
     </mat-card>
   </div>
   <div class="right">
     <div class="roundC">
+      
       
     </div>
   </div>

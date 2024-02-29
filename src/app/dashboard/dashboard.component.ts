@@ -4,6 +4,8 @@ import { MenuItem } from 'primeng/api';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MenuModule } from 'primeng/menu';
 import { Router, NavigationStart } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+
 
 
 @Component({
@@ -14,7 +16,7 @@ import { Router, NavigationStart } from '@angular/router';
 export class DashboardComponent {
   title = "Dashboard";
   DashboardName = "Explorer";
-  constructor( router: Router){
+  constructor(private router: Router, private cookieService: CookieService){
     router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
         console.log('Navigation started:', event);
@@ -41,11 +43,11 @@ export class DashboardComponent {
             icon: 'pi pi-fw pi-plus',
             items: [
               {
-                label: 'Bookmark',
-                icon: 'pi pi-fw pi-bookmark'
+                label: 'Annoucement',
+                icon: 'pi pi-fw pi-megaphone'
               },
               {
-                label: 'Video',
+                label: 'Bills',
                 icon: 'pi pi-fw pi-video'
               }
             ]
@@ -64,28 +66,6 @@ export class DashboardComponent {
         ]
       },
       {
-        label: 'Edit',
-        icon: 'pi pi-fw pi-pencil',
-        items: [
-          {
-            label: 'Left',
-            icon: 'pi pi-fw pi-align-left'
-          },
-          {
-            label: 'Right',
-            icon: 'pi pi-fw pi-align-right'
-          },
-          {
-            label: 'Center',
-            icon: 'pi pi-fw pi-align-center'
-          },
-          {
-            label: 'Justify',
-            icon: 'pi pi-fw pi-align-justify'
-          }
-        ]
-      },
-      {
         label: 'Users',
         icon: 'pi pi-fw pi-user',
         items: [
@@ -98,24 +78,9 @@ export class DashboardComponent {
             icon: 'pi pi-fw pi-user-minus'
           },
           {
-            label: 'Search',
+            label: 'Approve User',
             icon: 'pi pi-fw pi-users',
-            items: [
-              {
-                label: 'Filter',
-                icon: 'pi pi-fw pi-filter',
-                items: [
-                  {
-                    label: 'Print',
-                    icon: 'pi pi-fw pi-print'
-                  }
-                ]
-              },
-              {
-                icon: 'pi pi-fw pi-bars',
-                label: 'List'
-              }
-            ]
+            
           }
         ]
       },
@@ -136,24 +101,24 @@ export class DashboardComponent {
                 icon: 'pi pi-fw pi-calendar-minus'
               }
             ]
-          },
-          {
-            label: 'Archieve',
-            icon: 'pi pi-fw pi-calendar-times',
-            items: [
-              {
-                label: 'Remove',
-                icon: 'pi pi-fw pi-calendar-minus'
-              }
-            ]
           }
         ]
       },
+
       {
         label: 'Quit',
-        icon: 'pi pi-fw pi-power-off'
+        icon: 'pi pi-fw pi-power-off',
+        command: () => this.logOut()
       }
     ];
   }
+
+  logOut(){
+    console.log("Quiting");
+    
+    this.cookieService.deleteAll();
+    this.router.navigate(["/"]);
+    
+  } 
 
 }

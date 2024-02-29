@@ -49,6 +49,11 @@ import { SocietyChatGroupComponent } from './society-chat-group/society-chat-gro
 import { FestiveCalendarComponent } from './festive-calendar/festive-calendar.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import { FileUploadModule } from 'primeng/fileupload';
+import { AnnoucementComponent } from './annoucement/annoucement.component';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { DatePipe } from '@angular/common';
+
+
 
 @NgModule({
     declarations: [
@@ -61,9 +66,11 @@ import { FileUploadModule } from 'primeng/fileupload';
         MembersComponent,
         SocietyChatGroupComponent,
         FestiveCalendarComponent,
-        UserSettingsComponent
+        UserSettingsComponent,
+        AnnoucementComponent
     ],
     imports: [
+        NgxMaterialTimepickerModule,
         FileUploadModule,
         HttpClientModule,
         FormsModule,
@@ -108,7 +115,7 @@ import { FileUploadModule } from 'primeng/fileupload';
         MatSliderModule
     ],
     providers: [
-        
+        DatePipe
     ],
     bootstrap: [AppComponent]
 })

@@ -32,5 +32,19 @@
         "About-info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quia.",
         "image-path": "/folder/"
     }
+  ],
+  "reports": [
+    {
+        "id": 1241,
+        "title": "Utility Bill",
+        "description": "U----Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quia.",
+        "image-path": "/folder/"
+    },
+    {
+        "id": 1239,
+        "title": "Maintenace Bill",
+        "description": "M----Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quia.",
+        "image-path": "/folder/"
+    }
   ]
 }
